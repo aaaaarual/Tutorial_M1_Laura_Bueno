@@ -1,9 +1,13 @@
 extends Node # instancia a classe Node2D
 
 var status = 1
+# é a variante da movimentação do dragão, qualuqer núemro menos o 1 faz com que ele fique parado
 var vscore = 0
-var x = 1.5 
-var y = 1.5 
+# é a variante que contabiliza os pontos que o jogador consegue depois de ultrapassar os obstáculos
+var x = 5.0
+# a variante x representa a velocidade com que o dragão se movimenta para frente
+var y = 3.0
+# a variante y é a velocidade com que o dragão cai
 
 # executa essa função ao carregar o jogo
 func _ready():
