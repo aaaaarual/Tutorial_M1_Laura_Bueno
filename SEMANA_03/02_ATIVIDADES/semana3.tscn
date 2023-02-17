@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="lista" type="Button" parent="."]
+margin_left = 314.0
+margin_top = 8.0
+margin_right = 468.0
+margin_bottom = 49.0
+text = "COMO SER FELIZ"
+
+[node name="vazio" type="LineEdit" parent="."]
+margin_left = 28.0
+margin_top = 65.0
+margin_right = 298.0
+margin_bottom = 107.0
+
+[node name="ok" type="Button" parent="vazio"]
+margin_left = 285.0
+margin_top = 2.0
+margin_right = 436.0
+margin_bottom = 44.0
+text = "INSIRA AO LADO"
+
+[node name="ok2" type="Button" parent="."]
+margin_left = 787.0
+margin_top = 9.0
+margin_right = 939.0
+margin_bottom = 49.0
+text = "CLIQUE"
+
+[node name="texto" type="LineEdit" parent="."]
+margin_left = 498.0
+margin_top = 7.0
+margin_right = 768.0
+margin_bottom = 49.0
+
+[node name="clique" type="LineEdit" parent="."]
+margin_left = 30.0
+margin_top = 10.0
+margin_right = 298.0
+margin_bottom = 49.0
+
+[node name="valor" type="LineEdit" parent="."]
+margin_left = 499.0
+margin_top = 68.0
+margin_right = 771.0
+margin_bottom = 108.0
+
+[node name="final" type="Button" parent="valor"]
+margin_left = 285.0
+margin_right = 436.0
+margin_bottom = 38.0
+text = "OK"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 33.0
+margin_top = 129.0
+margin_right = 949.0
+margin_bottom = 240.0
+
+[connection signal="pressed" from="lista" to="." method="_on_lista_pressed"]
+[connection signal="pressed" from="vazio/ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="ok2" to="." method="_on_ok2_pressed"]
+[connection signal="pressed" from="valor/final" to="." method="_on_final_pressed"]
